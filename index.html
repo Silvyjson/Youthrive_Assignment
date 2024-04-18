@@ -7,14 +7,14 @@
     <link rel="stylesheet" href="./index.css">
   </head>
   <body>
-    <h1>My Favorite Things</h1>
-    <ul>
-      <li>Cooking</li>
-      <li>Learning new things</li>
-      <li>Coding</li>
-      <li>Dancing</li>
-      <li>Travels</li>
-    </ul>
-    <img src="./image//download.jpg" alt="a preview of an airplane in the sky ">
+    <div class="container">
+      <h1>Score Category Checker</h1>
+      <p>Enter your score to see your category:</p>
+      <input type="text" id="scoreInput" />
+      <button onclick="showScoreCategory()">submit</button>
+      <div id="scoreCategory"></div>
+    </div>
+    <script src="./index.js"></script>
+    <script src="./scoreCategory.js"></script>
   </body>
 </html>
