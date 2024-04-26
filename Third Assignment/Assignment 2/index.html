@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DOM Manipulation Example</title>
+    <style>
+      body {
+        margin: 20px;
+        display: flex;
+        flex-direction: column;
+      }
+      #task-list {
+        display: flex;
+        gap: 10px;
+        margin: 20px 0;
+      }
+
+      .task-item {
+        cursor: pointer;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        padding: 10px;
+        margin: 5px 0;
+        flex-wrap: 1;
+        width: 100%;
+        height: 20px;
+        background-color: #fff;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        font-size: 18px;
+        display: flex;
+        align-items: center;
+      }
+
+      input[type="checkbox"] {
+        height: 20px;
+        width: 20px;
+      }
+
+      input[type="text"] {
+        height: 40px;
+        max-width: 200px;
+        width: 100%;
+      }
+
+      button {
+        background-color: rgb(109, 12, 12);
+        border: none;
+        height: 45px;
+        width: 70px;
+        color: #fff;
+        /* border-radius: 10px; */
+      }
+      li,
+      ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>ToDo List</h1>
+
+    <div style="display: flex">
+      <input type="text" id="task-input" placeholder="Enter a new task" />
+      <button onclick="addTask()">Add Task</button>
+    </div>
+
+    <ul id="task-list"></ul>
+    <script src="./index.js"></script>
+  </body>
+</html>
