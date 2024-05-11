@@ -12,6 +12,5 @@ app.listen(PORT, () => {
   console.log(`Server is running on ${PORT}`);
 });
 
-app.get("/", controller.usersData);
-
-app.post("/post", controller.postData)
+app.get("/get", controller.getProdutData);
+app.post("/post", controller.postProductData);
