@@ -13,7 +13,7 @@ const getProdutData = async (req, res) => {
 
 const postProductData = async (req, res) => {
   const {name, brand, color, price} = req.body;
-  if(!name || !brand|| !color || !price) {
+  if(!name || !brand || !color || !price) {
     return res.status(400).json({
       message: "Please fill all the fields",
     });
