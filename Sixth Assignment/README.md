@@ -1,1 +1,1 @@
-MONGODB_URL = mongodb+srv://silvyjson:<password>@productinventory.oexlvju.mongodb.net/?retryWrites=true&w=majority&appName=ProductInventory
+MONGODB_URL = mongodb+srv://silvyjson:"password"@productinventory.oexlvju.mongodb.net/?retryWrites=true&w=majority&appName=ProductInventory
